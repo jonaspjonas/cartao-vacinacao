@@ -1,0 +1,34 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1 {
+    background-color: bisque;
+}
+
+.home-container h2 {
+    background-color: rgb(226, 221, 147);
+}
+
+.lista-usuarios {
+    display: flex;
+    text-align: center;
+    text-align: center;
+}
+
+.lista-usuarios ul {
+    width: 300px;
+    background-color: lawngreen;
+    border-radius: 8px;
+}
+
+.lista-usuarios li {
+    width: 300px;
+    list-style: none;
+    background-color: lightblue;
+    padding-left: 20px;
+    border-radius: 8px;
+}
