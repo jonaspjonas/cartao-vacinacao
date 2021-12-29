@@ -1,18 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function Cadastro() {
 
-    const [
-        primeiroNome,
-        setPrimeiroNome,
-        ultimoNome,
-        setUltimoNome,
-        email,
-        setEmail,
-        senha,
-        setSenha
-    ] = useState(" ");
+    const [primeiroNome, setPrimeiroNome] = useState(" ");
+    const [ultimoNome, setUltimoNome] = useState(" ");
+    const [email, setEmail] = useState(" ");
+    const [senha, setSenha] = useState(" ");
 
     return (
         <div className='card-cadastro'>
@@ -30,7 +25,10 @@ function Cadastro() {
             <label htmlFor='nome'>Senha:</label>
             <input type="text" value={senha} onChange={e=> setSenha(e.target.value)} />
 
+            <button>Cadastrar</button>
 
+            <span>Já possui cadastro?</span>
+            <Link to="/login">Faça Login</Link>
 
         </div>
     );

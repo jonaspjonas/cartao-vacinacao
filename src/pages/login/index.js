@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
 
-    const [
-        email,
-        setEmail,
-        senha,
-        setSenha
-     ] = useState(" ");
+    const [email, setEmail] = useState(" ");
+    const [senha, setSenha] = useState(" ");
 
     return (
         <div className='container-login'>
@@ -25,7 +22,7 @@ function Login() {
                     <button>Entrar</button>
 
                     <span>Não possui credenciais?</span>
-                    <a href='www#'>Cadastre-se</a>
+                    <Link to="/cadastro">Cadastre-se</Link>
                 </div>
             </div>
 
